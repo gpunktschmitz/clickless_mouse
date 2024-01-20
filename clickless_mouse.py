@@ -542,11 +542,11 @@ class clickless_mouse:
                         actions.sleep("{}ms".format(release_button_delay.get()))
                         ctrl.mouse_click(button=right_mouse_button_index, up=True)
                 elif item_hit.action == "su":
-                    actions.mouse_scroll(y=-10)
+                    actions.mouse_scroll(y=-1)
                     draw_options = True
 
                 elif item_hit.action == "sd":
-                    actions.mouse_scroll(y=10)
+                    actions.mouse_scroll(y=1)
                     draw_options = True
                 elif item_hit.action == "ka":
                     draw_options = True
